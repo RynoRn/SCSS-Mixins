@@ -16,32 +16,32 @@ HTML MARKUP: FLAG OBJECT
     width:100%;
 }
 
-    .flag__image, .flag__body {
-        display: table-cell;
-        vertical-align: middle;
+.flag__image, .flag__body {
+    display: table-cell;
+    vertical-align: middle;
 
-        &.flag--top {
-            vertical-align: top;
-        }
-
-        &.flag--bottom {
-            vertical-align: bottom;
-        }
+    &.flag--top {
+        vertical-align: top;
     }
 
-    .flag__image {
-        padding-right: 10px;
+    &.flag--bottom {
+        vertical-align: bottom;
+    }
+}
 
-        > img {
-            display: block;
-        }
+.flag__image {
+    padding-right: 10px;
 
-        &.flag--rev {
-            padding-right: 0;
-            padding-left: 10px;
-        }
+    > img {
+        display: block;
     }
 
-    .flag__body {
-        width:100%;
+    &.flag--rev {
+        padding-right: 0;
+        padding-left: 10px;
     }
+}
+
+.flag__body {
+    width:100%;
+}

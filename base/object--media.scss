@@ -14,23 +14,23 @@ HTML MARKUP: MEDIA OBJECT
 .media { 
 	margin: 10px; 
 
-		.media__img { 
-			float: left;
-			margin-right: 10px;
+	.media__img { 
+		float: left;
+		margin-right: 10px;
 
-				img {
-					display: block;
-				}
+		img {
+			display: block;
 		}
+	}
 
-		.media__img--right { 
-			float: right; 
-			margin-left: 10px;
-		}
+	.media__img--right { 
+		float: right; 
+		margin-left: 10px;
+	}
 }
 
-	.media, .media__content { 
-		overflow: hidden; 
-		_overflow: visible; 
-		zoom: 1;
-	}
+.media, .media__content { 
+	overflow: hidden; 
+	_overflow: visible; 
+	zoom: 1;
+}
