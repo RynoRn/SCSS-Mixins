@@ -28,7 +28,6 @@ László Horváth – [@RynoRn](https://twitter.com/RynoRn) – horvathlaszlo88@
 
 Distributed under the MIT license. See ``LICENSE`` for more information.
 
-[https://github.com/RynoRn/awesome-scss-mixins](https://github.com/RynoRn/awesome-scss-mixins)
 [npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/datadog-metrics
 [npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
