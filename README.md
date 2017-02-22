@@ -25,6 +25,7 @@ TBD.
 
 ## Meta
 László Horváth – [@RynoRn](https://twitter.com/RynoRn) – horvathlaszlo88@gmail.com
+
 Distributed under the MIT license. See ``LICENSE`` for more information.
 [https://github.com/yourname/github-link](https://github.com/dbader/)
 [npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
