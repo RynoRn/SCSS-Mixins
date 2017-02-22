@@ -1,19 +1,23 @@
-//* FLAG OBJECT ==============================================================================
-/*
-HTML MARKUP: FLAG OBJECT
--------------------------
-<div class="flag">
-    <div class="flag__image">
-        <img src="" alt="">
-    </div>
-    <div class="flag__body">
-        <p></p>
-    </div>
-</div>
-*/
+//
+// Flag Object
+//
+
+//
+// HTML Markup:
+//
+// <div class="flag">
+//   <div class="flag__image">
+//     <img src="" alt="">
+//   </div>
+//   <div class="flag__body">
+//       <p><!-- Some content here --></p>
+//   </div>
+// </div>
+//
+
 .flag {
-    display:table;
-    width:100%;
+    display: table;
+    width: 100%;
 }
 
 .flag__image, .flag__body {

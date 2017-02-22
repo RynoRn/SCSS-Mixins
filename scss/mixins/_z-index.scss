@@ -1,0 +1,24 @@
+//
+// Z-index Mixins
+//
+
+$z-index: (
+  modal: 100,
+  overlay: 80,
+  notification: 50,
+  dropdown: 40,
+  navbar: 30,
+  footer: 20,
+  sidebar: 10,
+  default: 1,
+  below: -1,
+  auto: auto
+);
+
+@function z($index, $offset: 0) {
+  @if not map-has-key($z-index, $index) {
+    @warn "No index found for `#{$index}` in $z-index map. Property omitted.";
+  }
+
+  @return map-get($z-index, $index) + $offset;
+}

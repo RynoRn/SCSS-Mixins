@@ -1,0 +1,69 @@
+//
+// General Mixins
+//
+
+@mixin grayscale($amount: 100%) {
+  filter: grayscale($amount);
+  -webkit-filter: grayscale($amount);
+  -moz-filter: grayscale($amount);
+  -o-filter: grayscale($amount);
+  -ms-filter: grayscale($amount);
+}
+
+@mixin text-truncate($max-width: 100%) {
+  max-width: $max-width;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin disable-text-selection() {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@mixin input-placeholder() {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+
+  &:-moz-placeholder { /* Firefox 18- */
+    @content;
+  }
+
+  &::-moz-placeholder { /* Firefox 19+ */
+    @content;
+  }
+
+  &:-ms-input-placeholder {
+    @content;
+  }
+}
+
+
+//
+// Mixin used for background images on high resolution retina displays
+//
+// The `min--moz-device-pixel-ratio` is not a typo. It is a well documented bug in certain versions
+// of Firefox and should be written like this in order to support older versions.
+//
+// Please note: You do need to set the `background-size` property as well to match the original dimensions of your background image.
+//
+
+/* stylelint-disable */
+@mixin retina-background() {
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+    @content;
+  }
+}
+/* stylelint-enable */

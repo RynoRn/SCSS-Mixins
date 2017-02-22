@@ -1,0 +1,19 @@
+{
+  "name": "awesome-scss-mixins",
+  "version": "1.0.0",
+  "description": "Awesome SCSS Mixins",
+  "main": "scss/awesome-scss-mixins.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RynoRn/SCSS-Mixins.git"
+  },
+  "author": "László Horváth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RynoRn/SCSS-Mixins/issues"
+  },
+  "homepage": "https://github.com/RynoRn/SCSS-Mixins#readme"
+}

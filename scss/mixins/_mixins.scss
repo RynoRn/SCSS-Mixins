@@ -46,20 +46,22 @@
     transform: translate3d($param1, $param2, $param3);
 }
 
-@mixin flexbox(){
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
+@mixin pseudo-element($type, $width, $height){
+	position: relative;
+
+	&::#{$type} {
+		@include pseudo-element-inner($width, $height);
+	}
 }
 
-@mixin element--pseudo($width, $height){
+@mixin pseudo-element-inner($width, $height){
     content: '';
+
     display: inline-block;
     width: $width;
     height: $height;
-    position: relative;
+
+		position: absolute;
 }
 
 @mixin cube($size){

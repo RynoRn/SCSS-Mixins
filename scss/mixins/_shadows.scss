@@ -1,0 +1,9 @@
+@import '../helpers/colors';
+
+//
+// Shadow Mixins
+//
+
+@mixin right-shadow() {
+  box-shadow: 3px 0 6px $shadow-color;
+}

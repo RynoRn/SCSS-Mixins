@@ -1,0 +1,38 @@
+//
+// Flexbox Mixins
+//
+
+@mixin display-flex {
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex-flow($flex-direction, $flex-wrap) {
+  -webkit-flex-flow: $flex-direction $flex-wrap;
+  flex-flow: $flex-direction $flex-wrap;
+}
+
+@mixin flex-direction($flex-direction) {
+  -webkit-flex-direction: $flex-direction;
+  flex-direction: $flex-direction;
+}
+
+@mixin flex-grow($flex-grow) {
+  -webkit-flex-grow: $flex-grow;
+  flex-grow: $flex-grow;
+}
+
+@mixin flex($flex...) {
+  -webkit-flex: $flex;
+  flex: $flex;
+}
+
+@mixin flex-align-self($flex-align) {
+  -webkit-align-self: $flex-align;
+  align-self: $flex-align;
+}
+
+@mixin justify-content($value) {
+  -webkit-justify-content: $value;
+  justify-content: $value;
+}
