@@ -1,6 +1,6 @@
 {
   "name": "awesome-scss-mixins",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Awesome SCSS Mixins",
   "main": "scss/awesome-scss-mixins.scss",
   "scripts": {
