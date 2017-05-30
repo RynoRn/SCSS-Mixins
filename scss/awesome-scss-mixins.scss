@@ -2,10 +2,11 @@
 // Awesome SCSS Mixins
 //
 
-// Helpers
-@import "helpers/variables.scss";
-@import "helpers/helpers.scss";
-@import "helpers/shortcodes.scss";
+// Utilities
+@import "utilities/variables.scss";
+@import "utilities/colors.scss";
+@import "utilities/utilities.scss";
+@import "utilities/shortcodes.scss";
 
 // Mixins
 @import "mixins/index";

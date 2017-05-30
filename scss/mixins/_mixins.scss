@@ -1,70 +1,13 @@
-//* MIXINS ==============================================================================
-@mixin box-shadow($params){
-	-webkit-box-shadow: $params;
-	-moz-box-shadow: $params;
-	box-shadow: $params;
-}
+//
+// Mixins
+//
 
-@mixin box-shadow-2($param1, $param2){
-	-webkit-box-shadow: $param1, $param2;
-	-moz-box-shadow: $param1, $param2;
-	box-shadow: $param1, $param2;
-}
-
-@mixin rounded($params){
-	-webkit-border-radius: $params;
-	-moz-border-radius: $params;
-	border-radius: $params;
-}
-
-@mixin transition($params){
-	-webkit-transition: $params;
-	-moz-transition: $params;
-	-o-transition: $params;
-	transition: $params;
-}
-
-@mixin appearance($params){
-	-webkit-appearance: $params;
-	-moz-appearance: $params;
-	appearance: $params;
-}
-
-@mixin rotate($params){
-    -webkit-transform: rotate($params);
-    -moz-transform: rotate($params);
-    -ms-transform: rotate($params);
-    -o-transform: rotate($params);
-    transform: rotate($params);
-}
-
-@mixin translate3d($param1, $param2, $param3){
-    -webkit-transform: translate3d($param1, $param2, $param3);
-    -moz-transform: translate3d($param1, $param2, $param3);
-    -ms-transform: translate3d($param1, $param2, $param3);
-    -o-transform: translate3d($param1, $param2, $param3);
-    transform: translate3d($param1, $param2, $param3);
-}
-
-@mixin pseudo-element($type, $width, $height){
-	position: relative;
-
-	&::#{$type} {
-		@include pseudo-element-inner($width, $height);
-	}
-}
-
-@mixin pseudo-element-inner($width, $height){
-    content: '';
-
-    display: inline-block;
-    width: $width;
-    height: $height;
-
-		position: absolute;
-}
-
-@mixin cube($size){
+@mixin square($size){
     width: $size;
     height: $size;
+}
+
+@mixin rectangle($width, $height){
+    width: $width;
+    height: $height;
 }

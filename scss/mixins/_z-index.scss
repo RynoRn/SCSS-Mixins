@@ -3,16 +3,16 @@
 //
 
 $z-index: (
-  modal: 100,
-  overlay: 80,
+  modal:        100,
+  overlay:      80,
   notification: 50,
-  dropdown: 40,
-  navbar: 30,
-  footer: 20,
-  sidebar: 10,
-  default: 1,
-  below: -1,
-  auto: auto
+  dropdown:     40,
+  navbar:       30,
+  footer:       20,
+  sidebar:      10,
+  default:      1,
+  below:        -1,
+  auto:         auto
 );
 
 @function z($index, $offset: 0) {

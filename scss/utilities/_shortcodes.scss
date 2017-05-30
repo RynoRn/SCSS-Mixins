@@ -1,0 +1,22 @@
+//
+// Shortcodes
+//
+
+.gpu-accelerate {
+  transform: translate3d(0, 0, 0);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+.no-transition {
+  transition: none;
+}
+
+.no-animation {
+  animation: none;
+}
+
+.full-scale {
+  height: 100%;
+  width: 100%;
+}
