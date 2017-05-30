@@ -1,10 +1,19 @@
 # Awesome SCSS Mixins
 > A collection of awesome and must have SCSS mixins.
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
-TBD.
-![](header.png)
+
+## Requirements
+If you want to compile the SCSS to CSS you need to do the following steps first.
+
+```sh
+gem update --system
+gem install compass
+gem install autoprefixer-rails
+```
+
+If you have problems installing `compass` you can install it alternatively with the following command:
+```sh
+sudo gem install -n /usr/local/bin compass
+```
 
 ## Installation
 ```sh
@@ -14,22 +23,12 @@ npm install awesome-scss-mixins --save
 ## Usage example
 TBD.
 
-## Development setup
-TBD.
+## How to compile
 ```sh
-make install
-npm test
+compass watch scss\awesome-scss-mixins.scss
 ```
-## Release History
-TBD.
 
 ## Meta
-László Horváth – [@RynoRn](https://twitter.com/RynoRn) – horvathlaszlo88@gmail.com
+László Horváth – [@RynoRn](https://twitter.com/RynoRn) – horvathlaszlo88@gmail.com - [http://rynorn.com](http://rynorn.com)
 
 Distributed under the MIT license. See ``LICENSE`` for more information.
-
-[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/datadog-metrics
-[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
-[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
